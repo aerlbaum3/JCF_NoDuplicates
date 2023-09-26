@@ -1,0 +1,38 @@
+import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.Set;
+		
+		public class no_Duplicates {
+		    public static void main(String[] args) {
+		    	
+		    	ArrayList<String> withDuplicates = new ArrayList<String>();
+		    	
+		    	withDuplicates.add("Adeena");
+		    	withDuplicates.add("Adeena");
+		    	withDuplicates.add("Adeena");
+		    	withDuplicates.add("Yocheved");
+		    	withDuplicates.add("Shira");
+		    	withDuplicates.add("Shira");
+		        withDuplicates.add("Baila");
+		    	
+		        System.out.println("Students names with duplicates:  " + withDuplicates);
+		    	//the Set interface enforces uniqueness among the elements making sure there is no duplicates
+		        Set<String> noDuplicates = new TreeSet<String>();
+		        
+		        noDuplicates.add("Adeena");
+		        noDuplicates.add("Adeena");//Duplicates wont be added
+		        noDuplicates.add("Adeena");
+		        noDuplicates.add("Yocheved");
+		        noDuplicates.add("Shira");
+		        noDuplicates.add("Shira");
+		        noDuplicates.add("Baila");
+		        
+		        System.out.println("Students names without duplicates: " + noDuplicates);
+		        
+		    
+		   
+		    }
+		}
+
+
+
