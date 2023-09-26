@@ -1,0 +1,28 @@
+import java.util.TreeMap;
+import java.util.Map;
+public class shoeManufacture {
+			    public static void main(String[] args) {
+			        Map<String, String> shoeManufac = new TreeMap<>();
+			        
+			        shoeManufac.put("Platform Sneaker","Vince");
+			        shoeManufac.put("Ballet Flats", "Vince");
+			        shoeManufac.put("Booties", "Stuart Weitzman");
+			        shoeManufac.put("Loafer", "Stuart Weitzman");
+			        shoeManufac.put("Running sneaker", "Nike");
+			        shoeManufac.put("Flip Flop", "Nike");
+			        shoeManufac.put("Lace up sneaker","Veja");
+			        shoeManufac.put("Hiking Sneaker", "Veja");
+			        shoeManufac.put("Weejuns", "GH.Bass");
+			        shoeManufac.put("Oxford Loafer","GH.Bass");
+			        
+			        System.out.println("Shoe Store: ");
+			        for (Map.Entry<String, String> entry : shoeManufac.entrySet()) {
+			            String shoeName = entry.getKey();
+			            String manufacturer = entry.getValue();
+			            System.out.println(shoeName + " - " + manufacturer);
+			        
+			        
+			    }
+
+			    }
+}
